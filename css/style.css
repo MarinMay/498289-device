@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Open sans";
+  src: url("../font/opensans.woff2"),
+       url("../font/opensans.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open sans";
+  src: url("../font/opensanslight.woff2"),
+       url("../font/opensanslight.woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Extra Bold";
+  src: url("../font/gilroyextrabold.woff2"),
+       url("../font/gilroyextrabold.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/gilroylight.woff2"),
+       url("../font/gilroylight.woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Open sans", "Arial", sans-serif;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+.header__inner {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 10px 60px;
+  background-image: linear-gradient(to bottom, #ffffff 21px, #f7e296 21px);
+
+}
+
+.header__logo {
+  font-family:
+}
+.logo {}
+.header__middle {}
+.header__search {}
+.search {}
+.search__input {}
+.search__button {}
+.header__user-menu {}
+.user-menu {}
+.user-menu__log-in {}
+.user-menu__compare {}
+.user-menu__card {}
+.header__menu {}
+.main-menu {}
+.main-menu__list {}
+.main-menu__item {}
+.main-menu__sub-menu {}
+.sub-menu {}
+.sub-menu__item {}
