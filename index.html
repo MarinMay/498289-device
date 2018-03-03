@@ -11,100 +11,115 @@
     <header class="header">
       <div class="header__inner">
         <h1 class="visually-hidden">Главная. Интернет магазин полезностей - DEVICE</h1>
-      <div class="header__logo"><a class="logo">DEVICE</a></div>
-
-      <div class="header__middle">
-        <div class="header__search search">
-          <input class="search__input" type="text" placeholder="Поиск по сайту">
-          <button class="search__button" type="button">Найти</button>
+        <div class="header__logo">
+          <a class="logo">DEVICE</a>
         </div>
 
-        <div class="header__user-menu user-menu">
-          <a href="#" class="user-menu__log-in">Войти</a>
+        <div class="header__middle">
+          <div class="header__search search">
+            <input class="search__input" type="text" placeholder="Поиск по сайту">
+            <button class="search__button" type="button">Найти</button>
+          </div>
 
-          <a href="#" class="user-menu__compare">Сравнить</a>
-          <a href="#" class="user-menu__card">Корзина</a>
+          <div class="header__user-menu user-menu">
+            <div class="user-menu__autorization">
+              <a href="#" class="user-menu__log-in">Войти</a>
+            </div>
+
+            <a href="#" class="user-menu__compare">Сравнить</a>
+            <a href="#" class="user-menu__card">Корзина</a>
+          </div>
         </div>
-      </div>
 
-      <div class="header__menu">
-        <nav class="main-menu">
-          <ul class="main-menu__list">
-            <li class="main-menu__item">
-              <a href="catalog.html">Каталог товаров
-              </a>
+        <div class="header__menu">
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item main-menu__item--catalog">
+                <a href="catalog.html">Каталог товаров
+                </a>
 
-              <ul class="main-menu__sub-menu sub-menu">
-                <li class="sub-menu__item">Виртуальная реальность</li>
+                <ul class="main-menu__sub-menu sub-menu">
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Виртуальная реальность</a></li>
 
-                <li class="sub-menu__item">Моноподы для селфи</li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фитнес-браслеты</a></li>
 
-                <li class="sub-menu__item">Экшн-камеры</li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Квадрокоптеры</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#" >Моноподы для селфи</a></li>
 
-                <li class="sub-menu__item">Фитнес-браслеты</li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Умные часы</a></li>
 
-                <li class="sub-menu__item">Умные часы</li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Экшн-камеры</a></li>
+                </ul>
+              </li>
 
-                <li class="sub-menu__item">Квадрокоптеры</li>
-              </ul>
-            </li>
+              <li class="main-menu__item main-menu__item--delivery"><a href="#">Доставка</a></li>
 
-            <li class="main-menu__item"><a href="#">Доставка</a></li>
+              <li class="main-menu__item main-menu__item--guarantee"><a href="#">Гарантия</a></li>
 
-            <li class="main-menu__item"><a href="#">Гарантия</a></li>
-
-            <li class="main-menu__item"><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
+              <li class="main-menu__item main-menu__item--contacts"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main class="main">
       <article class="main__slider preview-slider">
         <h2 class="visually-hidden">Супер предложения</h2>
+
         <div class="preview-slider__control slider-control">
-          <label><input type="radio" class="slider-control__input" name="slider-control"></label>
-          <label><input type="radio" class="slider-control__input" name="slider-control"></label>
-          <label><input type="radio" class="slider-control__input" name="slider-control"></label>
+          <label class="slider-control__label">
+            <input type="radio" class="visually-hidden" name="slider-control" checked>
+            <span class="slider-control__checked"></span>
+          </label>
+
+          <label class="slider-control__label">
+            <input type="radio" class="visually-hidden" name="slider-control">
+            <span class="slider-control__checked"></span>
+          </label>
+
+          <label class="slider-control__label">
+            <input type="radio" class="visually-hidden" name="slider-control">
+            <span class="slider-control__checked"></span>
+          </label>
         </div>
 
-        <div class="preview-slider__item">
+        <div class="preview-slider__item preview-slider__item--first">
           <section class="preview-slider__image">
-            <img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
+            <div class="preview-slider__image-wrapper">
+              <img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
+            </div>
           </section>
 
           <section class="preview-slider__description">
-            <h3 class="preview-slider__header">Делай селфи, как Бен&nbsp;Стиллер!</h3>
+            <h3 class="preview-slider__header">Делай селфи, как&nbsp;Бен&nbsp;Стиллер!</h3>
 
-            <p class="preview-slider__text">Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <p class="preview-slider__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь&nbsp;(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
             <a href="#" class="preview-slider__more button">Подробнее</a>
 
             <div class="preview-slider__facts">
-              <table class="preview-slider__table">
-                <tr class="preview-slider__table-row">
-                  <td class="preview-slider__table-cell">8,5 м</td>
-
-                  <td class="preview-slider__table-cell">5 кг</td>
-
-                  <td class="preview-slider__table-cell">Карбон</td>
-                </tr>
-                <tr class="preview-slider__table-row preview-slider__table-row--caption">
-                  <td class="preview-slider__table-cell">Длина палки</td>
-
-                  <td class="preview-slider__table-cell">Вес палки</td>
-
-                  <td class="preview-slider__table-cell">Материал</td>
-                </tr>
-              </table>
+              <div class="preview-slider__column preview-slider__column--first">
+                <div class="preview-slider__cell preview-slider__cell--fact">8,5 м</div>
+                <div class="preview-slider__cell">Длина палки</div>
+              </div>
+              <div class="preview-slider__column preview-slider__column--second">
+                <div class="preview-slider__cell preview-slider__cell--fact">5 кг</div>
+                <div class="preview-slider__cell">Вес палки</div>
+              </div>
+              <div class="preview-slider__column preview-slider__column--tird">
+                <div class="preview-slider__cell preview-slider__cell--fact">Карбон</div>
+                <div class="preview-slider__cell">Материал</div>
+              </div>
             </div>
           </section>
         </div>
 
-        <div class="preview-slider__item">
+        <div class="preview-slider__item preview-slider__item--second">
           <section class="preview-slider__image">
-            <img src="img/slider-2.png" alt="Фитнесс браслет" width="345" height="485">
+            <div class="preview-slider__image-wrapper">
+              <img src="img/slider-2.png" alt="Фитнесс браслет" width="345" height="485">
+            </div>
           </section>
 
           <section class="preview-slider__description">
@@ -115,22 +130,19 @@
             <a href="#" class="preview-slider__more button">Подробнее</a>
 
             <div class="preview-slider__facts">
-              <table class="preview-slider__table">
-                <tr class="preview-slider__table-row">
-                  <td class="preview-slider__table-cell">48 часов</td>
-                </tr>
-
-                <tr class="preview-slider__table-row preview-slider__table-row--caption">
-                  <td class="preview-slider__table-cell">Без подзарядки</td>
-                </tr>
-              </table>
+              <div class="preview-slider__column preview-slider__column--first">
+                <div class="preview-slider__cell preview-slider__cell--fact">48 часов</div>
+                <div class="preview-slider__cell">Без подзарядки</div>
+              </div>
             </div>
           </section>
         </div>
 
-        <div class="preview-slider__item">
+        <div class="preview-slider__item preview-slider__item--tird">
           <section class="preview-slider__image">
-            <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
+            <div class="preview-slider__image-wrapper">
+              <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
+            </div>
           </section>
 
           <section class="preview-slider__description">
@@ -141,19 +153,15 @@
             <a href="#"  class="preview-slider__more button">Подробнее</a>
 
             <div class="preview-slider__facts">
-              <table class="preview-slider__table">
-                <tr class="preview-slider__table-row">
-                  <td class="preview-slider__table-cell">800 м</td>
+              <div class="preview-slider__column preview-slider__column--first">
+                <div class="preview-slider__cell preview-slider__cell--fact">800 м</div>
+                <div class="preview-slider__cell">Дальность полета</div>
+              </div>
 
-                  <td class="preview-slider__table-cell">50 м</td>
-                </tr>
-
-                <tr class="preview-slider__table-row preview-slider__table-row--caption">
-                  <td class="preview-slider__table-cell">Дальность полета</td>
-
-                  <td class="preview-slider__table-cell">Радиус поражения</td>
-                </tr>
-              </table>
+              <div class="preview-slider__column preview-slider__column--second">
+                <div class="preview-slider__cell preview-slider__cell--fact">50 м</div>
+                <div class="preview-slider__cell">Радиус поражения</div>
+              </div>
             </div>
           </section>
         </div>
