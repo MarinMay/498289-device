@@ -67,20 +67,23 @@
       <article class="main__slider preview-slider">
         <h2 class="visually-hidden">Супер предложения</h2>
 
+        <input class="visually-hidden" id="preview-slide1" type="radio"  name="slider-control" checked>
+
+        <input class="visually-hidden" type="radio" id="preview-slide2"  name="slider-control">
+
+        <input class="visually-hidden" type="radio" id="preview-slide3" name="slider-control">
+
         <div class="preview-slider__control slider-control">
-          <label class="slider-control__label">
-            <input type="radio" class="visually-hidden" name="slider-control" checked>
-            <span class="slider-control__checked"></span>
+          <label class="slider-control__label" for="preview-slide1">
+            <span class="slider-control__checked slider-control__checked--1"></span>
           </label>
 
-          <label class="slider-control__label">
-            <input type="radio" class="visually-hidden" name="slider-control">
-            <span class="slider-control__checked"></span>
+          <label class="slider-control__label" for="preview-slide2">
+            <span class="slider-control__checked slider-control__checked--2"></span>
           </label>
 
-          <label class="slider-control__label">
-            <input type="radio" class="visually-hidden" name="slider-control">
-            <span class="slider-control__checked"></span>
+          <label class="slider-control__label" for="preview-slide3">
+            <span class="slider-control__checked slider-control__checked--3" for="preview-slide3"></span>
           </label>
         </div>
 
@@ -139,7 +142,7 @@
         </div>
 
         <div class="preview-slider__item preview-slider__item--tird">
-          <section class="preview-slider__image">
+          <section class="preview-slider__image preview-slider__image--copter">
             <div class="preview-slider__image-wrapper">
               <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
             </div>

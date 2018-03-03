@@ -80,7 +80,7 @@ html {
 .header__inner {
   width: 1160px;
   margin: 0 auto;
-  padding: 16px 60px 35px 59px;
+  padding: 16px 60px 50px 59px;
   background-image: linear-gradient(to bottom, #ffffff 40px, #f7e296 40px);
 
 }
@@ -249,7 +249,7 @@ html {
 .main__slider {
   width: 1160px;
   margin: 0 auto;
-  background-image: linear-gradient(to bottom, #f7e296 127px, #ffffff 127px);
+  background-image: linear-gradient(to bottom, #f7e296 112px, #ffffff 112px);
 }
 
 .preview-slider {
@@ -263,6 +263,7 @@ html {
   display: flex;
   justify-content: space-between;
   width: 78px;
+  z-index: 10;
 }
 .slider-control {}
 
@@ -288,9 +289,6 @@ html {
   border-radius: 50%;
 }
 
-.slider-control__label input:checked + .slider-control__checked {
-  display: block;
-}
 
 .preview-slider__item {
   position: relative;
@@ -299,8 +297,8 @@ html {
 
 .preview-slider__item::before {
   position: absolute;
-  top: 1px;
-  right: 50px;
+  top: -13px;
+  right: 49px;
   font-family: "Gilroy-Extra Bold";
   font-size: 179px;
   line-height: 179px;
@@ -322,9 +320,13 @@ html {
 .preview-slider__image {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   width: 48.7%;
+}
+
+.preview-slider__image--copter {
+  padding-top: 65px;
 }
 
 .preview-slider__image-wrapper {
@@ -333,7 +335,7 @@ html {
 
 .preview-slider__description {
   width: 51.3%;
-  padding: 48px 34px 8px;
+  padding: 33px 34px 8px;
 }
 
 .preview-slider__header {
@@ -403,6 +405,27 @@ html {
   font-size: 36px;
   line-height: 48px;
   font-weight: 300;
+}
+
+#preview-slide1:checked ~ .preview-slider__control .slider-control__checked--1,
+#preview-slide2:checked ~ .preview-slider__control .slider-control__checked--2,
+#preview-slide3:checked ~ .preview-slider__control .slider-control__checked--3 {
+  display: block;
+}
+
+#preview-slide1:checked ~ .preview-slider__item--first,
+#preview-slide2:checked ~ .preview-slider__item--second,
+#preview-slide3:checked ~ .preview-slider__item--tird {
+  display: flex;
+}
+
+#preview-slide1:checked ~ .preview-slider__item--second,
+#preview-slide1:checked ~ .preview-slider__item--tird,
+#preview-slide2:checked ~ .preview-slider__item--first,
+#preview-slide2:checked ~ .preview-slider__item--tird,
+#preview-slide3:checked ~ .preview-slider__item--first,
+#preview-slide3:checked ~ .preview-slider__item--second {
+  display: none;
 }
 
 .main__catalog {}
