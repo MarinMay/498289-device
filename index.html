@@ -174,52 +174,64 @@
         <h2 class="visually-hidden">Ссылки на разделы каталога</h2>
         <ul class="catalog-sections__list">
           <li class="catalog-sections__item">
-            <a class="catalog-sections__link">Виртуальная реальность</a>
+            <a class="catalog-sections__link" href="#">Виртуальная реальность</a>
           </li>
           <li class="catalog-sections__item">
-            <a class="catalog-sections__link">Моноподы для селфи</a>
+            <a class="catalog-sections__link" href="#">Моноподы для&nbsp;селфи</a>
           </li>
           <li class="catalog-sections__item">
-            <a class="catalog-sections__link">Экшн-камеры</a>
+            <a class="catalog-sections__link" href="#">Экшн-камеры</a>
           </li>
           <li class="catalog-sections__item">
-            <a class="catalog-sections__link">Фитнес-браслеты</a>
+            <a class="catalog-sections__link" href="#">Фитнес-браслеты</a>
           </li>
           <li class="catalog-sections__item">
-            <a class="catalog-sections__link">Умные часы</a>
+            <a class="catalog-sections__link" href="#">Умные часы</a>
           </li>
           <li class="catalog-sections__item">
-            <a class="catalog-sections__link">Квадрокоптеры</a>
+            <a class="catalog-sections__link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
 
       <section class="main__service service-slider">
-        <h2 class="visualli-hidden">Наш сервис</h2>
+        <h2 class="visually-hidden">Наш сервис</h2>
 
-        <div class="service-slider__control slider-control">
-          <label><input type="radio" class="slider-control__input" name="service-slider-control">
-            <span class="button">Доставка</span>
+        <input class="visually-hidden" type="radio" id="service-slide1" name="service-slider-control">
+
+        <input class="visually-hidden" type="radio" id="service-slide2" name="service-slider-control">
+
+        <input class="visually-hidden" type="radio" id="service-slide3" name="service-slider-control">
+
+        <div class="service-slider__control">
+          <label class="service-slider__label service-slider__label--slide1" for="service-slide1">
+            <span class="service-slider__button button">Доставка</span>
           </label>
 
-          <label><input type="radio" class="slider-control__input" name="service-slider-control"><span class="button">Гарантия</span></label>
+          <label class="service-slider__label service-slider__label--slide2" for="service-slide2">
+            <span class="service-slider__button button">Гарантия</span>
+          </label>
 
-          <label><input type="radio" class="slider-control__input" name="service-slider-control"><span class="button">Кредит</span></label>
+          <label class="service-slider__label service-slider__label--slide3" for="service-slide3">
+            <span class="service-slider__button button">Кредит</span>
+          </label>
         </div>
 
         <div class="service-slider__content">
-          <h3 class="service-slider__header">Доставка</h3>
-          <p class="service-slider__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </div>
+          <div class="service-slider__slide service-slider__slide--slide1">
+            <h3 class="service-slider__header">Доставка</h3>
+            <p class="service-slider__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
 
-        <div class="service-slider__content">
-          <h3 class="service-slider__header">Гарантия</h3>
-          <p class="service-slider__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
-        </div>
+          <div class="service-slider__slide service-slider__slide--slide2">
+            <h3 class="service-slider__header">Гарантия</h3>
+            <p class="service-slider__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
+          </div>
 
-        <div class="service-slider__content">
-          <h3 class="service-slider__header">Кредит</h3>
-          <p class="service-slider__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          <div class="service-slider__slide service-slider__slide--slide3">
+            <h3 class="service-slider__header">Кредит</h3>
+            <p class="service-slider__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
         </div>
       </section>
 
@@ -227,33 +239,48 @@
         <h2 class="visually-hidden">Наши бренды</h2>
 
         <ul class="brends__list">
-          <li class="brends__item"><span class="visually-hidden">DJI</span></li>
-          <li class="brends__item"><span class="visually-hidden">SP Gadgets</span></li>
-          <li class="brends__item"><span class="visually-hidden">GoPro</span></li>
-          <li class="brends__item"><span class="visually-hidden">VIVE</span></li>
+          <li class="brends__item">
+            <img src="img/logo-1.png" alt="" width="260" height="100">
+            <span class="visually-hidden">DJI</span>
+          </li>
+
+          <li class="brends__item">
+            <img src="img/logo-2.png" alt="" width="260" height="100">
+            <span class="visually-hidden">SP Gadgets</span>
+          </li>
+
+          <li class="brends__item">
+            <img src="img/logo-3.png" alt="" width="260" height="100">
+            <span class="visually-hidden">GoPro</span>
+          </li>
+
+          <li class="brends__item">
+            <img src="img/logo-4.png" alt="" width="260" height="100">
+            <span class="visually-hidden">VIVE</span>
+          </li>
         </ul>
       </section>
 
       <section class="main__information information">
-        <h2 class="information__heading">Информация о компании</h2>
+        <h2 class="visually-hidden">Информация о компании</h2>
 
-        <section class="information__item about-us">
-          <h3 class="about-us__heading">О нас</h3>
+        <section class="information__item information__item--about-us">
+          <h3 class="information__heading">О нас</h3>
 
-          <p class="about-us__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="information__text">Огромный выбор гаджетов не оставит равнодушным гика, который&nbsp;есть в каждом из нас.</p>
 
-          <p class="about-us__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <p class="information__text information__text--compressed">Мы можем доставить ваш товар в самые отдаленные точки России!&nbsp;DEVICE работает со многими транспортными&nbsp;компаниями:</p>
 
-          <ul class="about-us__transport-list">
-            <li class="about-us__transport-item">
+          <ul class="information__transport-list">
+            <li class="information__transport-item">
               Деловые Линии
             </li>
 
-            <li class="about-us__transport-item">
+            <li class="information__transport-item">
               Автотрейдинг
             </li>
 
-            <li class="about-us__transport-item">
+            <li class="information__transport-item">
               ЖелДорЭкспедиция
             </li>
           </ul>
@@ -261,12 +288,12 @@
           <a href="#" class="information__more button">Подробнее о нас</a>
         </section>
 
-        <section class="information__item contacts">
-          <h3 class="contacts__heading">Контакты</h3>
+        <section class="information__item information__item--contacts">
+          <h3 class="information__heading">Контакты</h3>
 
-          <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <p class="information__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
-          <div class="contacts__map"></div>
+          <div class="information__map"></div>
 
           <a href="#" class="information__more button">Напишите нам</a>
         </section>
