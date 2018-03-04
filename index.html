@@ -197,7 +197,7 @@
       <section class="main__service service-slider">
         <h2 class="visually-hidden">Наш сервис</h2>
 
-        <input class="visually-hidden" type="radio" id="service-slide1" name="service-slider-control">
+        <input class="visually-hidden" type="radio" id="service-slide1" name="service-slider-control" checked>
 
         <input class="visually-hidden" type="radio" id="service-slide2" name="service-slider-control">
 
@@ -301,54 +301,59 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__item footer__item--left">
-        <a class="logo logo--footer">DEVICE</a>
-        <p class="footer__address">г. Москва, ул. Строителей, 15</p>
-      </div>
-
-      <div class="footer__item footer__item--center">
-        <ul class="features">
-          <li class="features__item"><a href="#" class="features__link">Доставка</a></li>
-          <li class="features__item"><a href="#" class="features__link">Гарантия</a></li>
-          <li class="features__item"><a href="#" class="features__link">Контакты</a></li>
-        </ul>
-
-        <ul class="social">
-          <li class="social__item social__item--facebook">
-            <a href="" class="social__link">
-              <span class="visually-hidden">Мы в Фейсбуке</span>
-            </a>
-          </li>
-
-          <li class="social__item social__item--insta">
-            <a href="" class="social__link">
-              <span class="visually-hidden">Мы в Инстаграме</span>
-            </a></li>
-
-          <li class="social__item social__item--twitter">
-            <a href="" class="social__link">
-              <span class="visually-hidden">Мы в Твиттере</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer__item footer__item--right">
-        <div class="footer__user-menu user-menu">
-          <a href="#" class="user-menu__log-in">Войти</a>
-
-          <a href="#" class="user-menu__compare">Сравнить</a>
-
-          <a href="#" class="user-menu__card">Корзина</a>
+      <div class="footer__inner">
+        <div class="footer__item footer__item--left">
+          <a class="logo logo--footer">DEVICE</a>
+          <p class="footer__address">г. Москва, ул. Строителей, 15</p>
         </div>
 
-        <a href="tel:+74954959595" class="footer__phone-number">Тел.: +7 (495) 495-95-95</a>
+        <div class="footer__item footer__item--right">
+          <div class="footer__user-menu user-menu user-menu--footer">
+            <div class="user-menu__autorization">
+              <a href="#" class="user-menu__log-in">Войти</a>
+            </div>
 
-        <div class="footer__copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright__link">
-            <span class="visually-hidden">HTML-Академия</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/></svg>
-          </a>
+            <a href="#" class="user-menu__compare">Сравнить</a>
+            <a href="#" class="user-menu__card">Корзина</a>
+          </div>
+
+          <div class="footer__links">
+            <ul class="info">
+              <li class="info__item"><a href="#" class="info__link  info__link--left">Доставка</a></li>
+              <li class="info__item"><a href="#" class="info__link">Гарантия</a></li>
+              <li class="info__item"><a href="#" class="info__link">Контакты</a></li>
+            </ul>
+
+            <div class="footer__phone-number-wrapper">
+              <a href="tel:+74954959595" class="footer__phone-number">Тел.: +7 (495) 495-95-95</a>
+            </div>
+
+            <ul class="social">
+              <li class="social__item social__item--facebook">
+                <a href="" class="social__link">
+                  <span class="visually-hidden">Мы в Фейсбуке</span>
+                </a>
+              </li>
+
+              <li class="social__item social__item--insta">
+                <a href="" class="social__link">
+                  <span class="visually-hidden">Мы в Инстаграме</span>
+                </a></li>
+
+              <li class="social__item social__item--twitter">
+                <a href="" class="social__link">
+                  <span class="visually-hidden">Мы в Твиттере</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="footer__copyright">
+              <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright__link">
+                <span class="visually-hidden">HTML-Академия</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

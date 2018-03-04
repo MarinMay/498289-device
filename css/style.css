@@ -144,7 +144,7 @@ html {
 }
 
 .user-menu__compare {
-  margin-right: 38px;
+  margin-right: auto;
   padding-left: 22px;
 }
 
@@ -244,6 +244,7 @@ html {
 .main {
   width: 1200px;
   margin: 0 auto;
+  padding-bottom: 90px;
 }
 
 .main__slider {
@@ -377,8 +378,9 @@ html {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.7px;
-  background-image: linear-gradient(to bottom, transparent 35%, #f7e296 35%, #f7e296 65%, transparent 65%);
+  background-image: linear-gradient(to bottom, transparent 35%, #fec515 35%, #fec515 65%, transparent 65%);
   border: none;
+  background-color: transparent;
 }
 
 .preview-slider__facts {
@@ -678,9 +680,143 @@ html {
 }
 
 .information__map {
+  margin-top: 24px;
   width: 560px;
   height: 222px;
   background-image: url(../img/map.jpg);
 }
 
+.footer {
+  padding: 60px 0 47px;
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.footer__item {}
+
+.footer__item--left {
+  position: relative;
+  width: 30%;
+  text-align: left;
+}
+
+.footer__item--left::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 32px;
+  width: 80px;
+  background-color: #fec515;
+  height: 7px;
+}
+
+.logo--footer {
+  margin-left: -3px;
+  color: #fec515;
+}
+
+.footer__address {
+  margin-top: 21px;
+  font-weight: 300;
+}
+
+.footer__item--right {
+  width: 68.3%;
+  padding-top: 2px;
+  text-align: right;
+}
+
+.footer__user-menu {
+  justify-content: flex-end;
+  text-align: left;
+}
+
+.footer__user-menu .user-menu__autorization{
+  display: flex;
+  justify-content: flex-end;
+  width: 72.5%;
+  padding-right: 40px;
+}
+
+.footer__user-menu .user-menu__compare {
+  margin-right: 32px;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 38px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 54%;
+  margin: 0;
+  padding: 6px 0 0;
+  list-style: none;
+  font-family: "Gilroy-Extra Bold";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.info__item {}
+
+.info__link {
+  margin-left: 4px;
+}
+
+.info__link--left {
+  margin-left: 0;
+}
+
+.footer__phone-number-wrapper {
+  width: 40%;
+}
+
+.footer__phone-number {
+}
+
+.social {
+  width: 53.7%;
+  margin: 64px 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+}
+
+.social__item {
+  display: inline-block;
+  margin: 0 11px 5px;
+}
+
+.social__item--facebook {}
+.social__item--insta {}
+.social__item--twitter {}
+
+.social__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.footer__copyright {
+  width: 40%;
+  margin-top: 62px;
+}
+.footer__copyright__link {}
 
