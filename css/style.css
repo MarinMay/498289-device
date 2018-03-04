@@ -197,8 +197,11 @@ html {
 }
 
 .sub-menu {
-  margin: 24px 0 0 -59px;
-  padding: 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 1160px;
+  margin: 0 0 0 -59px;
+  padding: 24px 60px 30px 59px;
   z-index: 10;
   list-style: none;
   font-family: "open sans";
@@ -207,16 +210,12 @@ html {
   line-height: 36px;
   text-transform: none;
   letter-spacing: 0.15px;
+  background-color: #f7e296;
 }
 
 .main-menu__item--catalog:hover .main-menu__sub-menu {
   position: absolute;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 1160px;
-  padding: 0 60px 30px 59px;
-  background-color: #f7e296;
 }
 
 .sub-menu__item:nth-child(1),
@@ -818,5 +817,93 @@ html {
   width: 40%;
   margin-top: 62px;
 }
-.footer__copyright__link {}
 
+.footer__copyright__link {
+  fill: #fec515;
+}
+
+.pop-up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  width: 960px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15),
+    0 -1px 10px 0 rgba(0, 1, 1, 0.15);
+}
+
+.pop-up--send-message {
+  padding: 100px 100px 80px;
+}
+
+.pop-up__close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #fec515;
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+}
+
+.pop-up__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pop-up__item {
+  width: 360px;
+  font-family: "Gilroy-Extra Bold";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.pop-up__input {
+  width: 360px;
+  height: 50px;
+  padding: 5px 20px;
+  font-family: "Open sans";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: #f1f1f1;
+  border: none;
+}
+
+.pop-up__caption {
+  margin-bottom: 10px;
+}
+
+.pop-up__item--name {}
+.pop-up__item--email {}
+
+.pop-up__item--message {
+  width: 760px;
+  margin: 30px 0 50px;
+}
+
+.pop-up__textarea {
+  width: 760px;
+  padding: 20px 25px;
+  font-family: "Open sans";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: #f1f1f1;
+  border: none;
+  resize: vertical;
+}
+.pop-up__submit {}
+
+.pop-up--map {
+  height: 560px;
+  background-image: url(../img/map-big.jpg);
+  background-position: center center;
+}
