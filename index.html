@@ -8,28 +8,6 @@
   </head>
 
   <body>
-    <div style="display: none">
-      <svg xmlns="http://www.w3.org/2000/svg">
-        <symbol id="twitter" viewbox="0 0 32 32">
-          <path d="M16 0a16 16 0 1 0 0 32 16 16 0 0 0 0-32zm8 13c0 6-4 11-11 11h-1l-5-2 5-1c-1-1-3-1-3-3h1l-2-4 1 1c-1-1-2-4-1-5 2 2 4 3 8 3 0-2 1-3 3-4l4 1h2l-1 1h2l-2 2z"/>
-        </symbol>
-
-        <symbol id="facebook" viewbox="0 0 32 32">
-          <path d="M16 0a16 16 0 1 0 0 32 16 16 0 0 0 0-32zm4 9h-3v4h3v3h-3v9h-3v-9h-3v-3h3V9c0-1 1-3 3-3h3v3z"/>
-        </symbol>
-
-        <symbol id="instagram" viewbox="0 0 32 32">
-          <g>
-            <path d="M21 16a5 5 0 1 1-10 0v-1h-1v7h12v-7h-1v1z"/><path d="M16 19a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm3-9h3v3h-3z"/><path d="M16 0a16 16 0 1 0 0 32 16 16 0 0 0 0-32zm8 22a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12z"/>
-          </g>
-        </symbol>
-
-        <symbol id="htmlacademy-logo" viewBox="0 0 27 35">
-          <path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/>
-        </symbol>
-      </svg>
-    </div>
-
     <header class="header">
       <div class="header__inner">
         <h1 class="visually-hidden">Главная. Интернет магазин полезностей - DEVICE</h1>
@@ -126,7 +104,7 @@
 
         <div class="preview-slider__item preview-slider__item--first">
           <section class="preview-slider__image">
-            <div class="preview-slider__image-wrapper">
+            <div class="preview-slider__image-wrapper bwWrapper">
               <img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
             </div>
           </section>
@@ -277,22 +255,30 @@
 
         <ul class="brends__list">
           <li class="brends__item">
-            <img src="img/logo-1.png" alt="" width="260" height="100">
+            <a class="brends__link" href="#">
+              <img class="grayscale grayscale-fade" src="img/logo-1.png" alt="" width="260" height="100">
+            </a>
             <span class="visually-hidden">DJI</span>
           </li>
 
           <li class="brends__item">
-            <img src="img/logo-2.png" alt="" width="260" height="100">
+            <a class="brends__link" href="#">
+              <img class="grayscale grayscale-fade" src="img/logo-2.png" alt="" width="260" height="100">
+            </a>
             <span class="visually-hidden">SP Gadgets</span>
           </li>
 
           <li class="brends__item">
-            <img src="img/logo-3.png" alt="" width="260" height="100">
-            <span class="visually-hidden">GoPro</span>
+            <a class="brends__link" href="#">
+              <img class="grayscale grayscale-fade" src="img/logo-3.png" alt="" width="260" height="100">
+            </a>
+            <span class="visually-hidden">Go Pro</span>
           </li>
 
           <li class="brends__item">
-            <img src="img/logo-4.png" alt="" width="260" height="100">
+            <a class="brends__link" href="#">
+              <img class="grayscale grayscale-fade" src="img/logo-4.png" alt="" width="260" height="100">
+            </a>
             <span class="visually-hidden">VIVE</span>
           </li>
         </ul>
@@ -330,9 +316,9 @@
 
           <p class="information__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
-          <div class="information__map"></div>
+          <div class="information__map" tabindex="0"></div>
 
-          <a href="#" class="information__more button">Напишите нам</a>
+          <a href="#" class="information__more information__more--write-us button">Напишите нам</a>
         </section>
       </section>
     </main>
@@ -366,40 +352,22 @@
             </div>
 
             <ul class="social">
-              <li class="social__item social__item--facebook">
-                <a href="#" class="social__link">
-                  <svg class="social__icon" width="32" height="32">
-                    <use xlink:href="#facebook"></use>
-                  </svg>
-
-                  <span class="visually-hidden">Мы в Фейсбуке</span>
-                </a>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--facebook" aria-label="Мы в Фейсбуке"></a>
               </li>
 
-              <li class="social__item social__item--insta">
-                <a href="" class="social__link">
-                  <svg class="social__icon" width="32" height="32">
-                    <use xlink:href="#instagram"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Инстаграме</span>
-                </a></li>
+              <li class="social__item">
+                <a href="" class="social__link social__link--insta" aria-label="Наш Инстаграм"></a>
+              </li>
 
-              <li class="social__item social__item--twitter">
-                <a href="#" class="social__link">
-                  <svg class="social__icon" width="32" height="32">
-                    <use xlink:href="#twitter"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Твиттере</span>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--twitter" aria-label="Наш Твиттер">
                 </a>
               </li>
             </ul>
 
             <div class="footer__copyright">
-              <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright__link">
-                <span class="visually-hidden">HTML-Академия</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35">
-                  <use xlink:href="#htmlacademy-logo"></use>
-                </svg>
+              <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright__link" aria-label="Сайт HTML Академии">
               </a>
             </div>
           </div>
@@ -407,28 +375,27 @@
       </div>
     </footer>
 
-    <div class="pop-up pop-up--send-message pop-up--hidden">
+    <div class="pop-up pop-up--hidden pop-up--send-message">
       <h2 class="visually-hidden">Тут можно написать нам письмо</h2>
 
       <button class="pop-up__close" type="button">
-
         <span class="visually-hidden">закрыть окно</span>
       </button>
 
-      <form class="pop-up__form" action="#">
+      <form class="pop-up__form" action="#" method="post">
         <label class="pop-up__item pop-up__item--name">
           <div class="pop-up__caption">Ваше имя:</div>
-          <input class="pop-up__input" type="text" placeholder="Имя Фамилия">
+          <input class="pop-up__input pop-up__input--name" type="text" placeholder="Имя Фамилия" required>
         </label>
 
         <label class="pop-up__item pop-up__item--email">
           <div class="pop-up__caption">Ваш e-mail:</div>
-          <input class="pop-up__input" type="email" placeholder="email@example.com">
+          <input class="pop-up__input pop-up__input--email" type="email" placeholder="email@example.com" required>
         </label>
 
         <label class="pop-up__item pop-up__item--message">
           <div class="pop-up__caption">Текст письма:</div>
-          <textarea class="pop-up__textarea" name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          <textarea class="pop-up__textarea" name="message" id="message" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
         </label>
 
         <button class="pop-up__submit button" type="submit">Отправить</button>
@@ -441,5 +408,10 @@
         <span class="visually-hidden">закрыть окно</span>
       </button>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="js/jquery.gray.min.js"></script>
+    <script src="js/pop-up.js"></script>
   </body>
 </html>

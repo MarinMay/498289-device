@@ -148,30 +148,50 @@
 
             <fieldset class="filters__item filters__item--color color">
               <h3 class="filters__legend">Цвет</h3>
-              <input class="visually-hidden color__checkbox" type="checkbox" id="black" name="black" checked>
-              <label for="black" class="color__label">Черный</label>
+                <ul class="color__list">
+                  <li class="color__item">
 
-              <input class="visually-hidden color__checkbox" type="checkbox" id="white" name="white">
-              <label for="white" class="color__label">Белый</label>
+                  </li>
+                  <li class="color__item">
+                    <input class="visually-hidden color__checkbox" type="checkbox" id="black" name="black" checked>
+                    <label for="black" class="color__label">Черный</label>
+                  </li>
 
-              <input class="visually-hidden color__checkbox" type="checkbox" id="blue" name="blue" checked>
-              <label for="blue" class="color__label">Синий</label>
+                  <li class="color__item">
+                    <input class="visually-hidden color__checkbox" type="checkbox" id="white" name="white">
+                    <label for="white" class="color__label">Белый</label>
+                  </li>
 
-              <input class="visually-hidden color__checkbox" type="checkbox" id="red" name="red" checked>
-              <label for="red" class="color__label">Красный</label>
+                  <li class="color__item">
+                    <input class="visually-hidden color__checkbox" type="checkbox" id="blue" name="blue" checked>
+                    <label for="blue" class="color__label">Синий</label>
+                  </li>
 
-              <input class="visually-hidden color__checkbox" type="checkbox" id="pink" name="pink">
-              <label for="pink" class="color__label">Розовый</label>
+                  <li class="color__item">
+                    <input class="visually-hidden color__checkbox" type="checkbox" id="red" name="red" checked>
+                    <label for="red" class="color__label">Красный</label>
+                  </li>
+
+                  <li class="color__item">
+                    <input class="visually-hidden color__checkbox" type="checkbox" id="pink" name="pink">
+                    <label for="pink" class="color__label">Розовый</label>
+                  </li>
+                </ul>
             </fieldset>
 
             <fieldset class="filters__item filters__item--bluetooth bluetooth">
               <h3 class="filters__legend">Bluetooth</h3>
+              <ul class="bluetooth__list">
+                <li class="bluetooth__item">
+                  <input class="visually-hidden bluetooth__input" type="radio" id="bluetooth-true" name="bluetooth" checked>
+                  <label class="bluetooth__label" for="bluetooth-true">Есть</label>
+                </li>
 
-              <input class="visually-hidden bluetooth__input" type="radio" id="bluetooth-true" name="bluetooth" checked>
-              <label class="bluetooth__label" for="bluetooth-true">Есть</label>
-
-              <input class="visually-hidden bluetooth__input" type="radio" id="bluetooth-false" name="bluetooth">
-              <label class="bluetooth__label" for="bluetooth-false">Нет</label>
+                <li class="bluetooth__item">
+                  <input class="visually-hidden bluetooth__input" type="radio" id="bluetooth-false" name="bluetooth">
+                  <label class="bluetooth__label" for="bluetooth-false">Нет</label>
+                </li>
+              </ul>
             </fieldset>
 
             <button class="filters__show button" type="submit">Показать</button>
@@ -275,7 +295,7 @@
 
         <div class="footer__item footer__item--right">
           <div class="footer__user-menu user-menu user-menu--footer">
-            <div class="user-menu__autorization">
+            <div class="user-menu__autorization user-menu__autorization--logged user-menu--footer">
               <a href="#" class="user-menu__username">Валентин Петухов</a>
 
               <a href="#" class="user-menu__log-out">Выйти</a>
@@ -297,41 +317,22 @@
             </div>
 
             <ul class="social">
-              <li class="social__item social__item--facebook">
-                <a href="#" class="social__link">
-                  <svg class="social__icon" width="32" height="32">
-                    <use xlink:href="#facebook"></use>
-                  </svg>
-
-                  <span class="visually-hidden">Мы в Фейсбуке</span>
-                </a>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--facebook" aria-label="Мы в Фейсбуке"></a>
               </li>
 
-              <li class="social__item social__item--insta">
-                <a href="" class="social__link">
-                  <svg class="social__icon" width="32" height="32">
-                    <use xlink:href="#instagram"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Инстаграме</span>
-                </a></li>
+              <li class="social__item">
+                <a href="" class="social__link social__link--insta" aria-label="Наш Инстаграм"></a>
+              </li>
 
-              <li class="social__item social__item--twitter">
-                <a href="#" class="social__link">
-                  <svg class="social__icon" width="32" height="32">
-                    <use xlink:href="#twitter"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Твиттере</span>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--twitter" aria-label="Наш Твиттер">
                 </a>
               </li>
             </ul>
 
             <div class="footer__copyright">
-              <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright__link">
-                <span class="visually-hidden">HTML-Академия</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35">
-                  <use xlink:href="#htmlacademy-logo"></use>
-                </svg>
-              </a>
+              <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright__link" aria-label="Сайт HTML Академии"></a>
             </div>
           </div>
         </div>
