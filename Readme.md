@@ -1,5 +1,5 @@
 # Личный проект «Девайс»
 
-Собранный вариант https://marinmay.github.io/498289-device/
+Собранный вариант https://marinmay.github.io/Device/
 ---
 
