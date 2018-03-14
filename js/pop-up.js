@@ -13,17 +13,17 @@
   var ESC_KEYCODE = 27;
   var ENTER_KEYCODE = 13;
 
-   function validateInput (input) {
+  function validateInput(input) {
     if (!input.validity.valid) {
       input.classList.add('pop-up__input--error');
     } else {
       input.classList.remove('pop-up__input--error');
     }
-   }
+  }
 
-   function onInputChange (evt) {
-    validateInput (evt.target);
-   }
+  function onInputChange(evt) {
+    validateInput(evt.target);
+  }
 
   function onButtonSubmitMessageClick() {
     validateInput(name);
@@ -41,7 +41,7 @@
     }
   }
 
-  function onButtonWriteUsClick (evt) {
+  function onButtonWriteUsClick(evt) {
     popupWriteUs.classList.remove('pop-up--hidden');
     evt.preventDefault();
     document.addEventListener('keydown', onPopupPressEcs);
@@ -52,17 +52,17 @@
     document.removeEventListener('keydown', onPopupPressEcs);
   }
 
-  function mapOpen () {
+  function mapOpen() {
     popupMap.classList.remove('pop-up--hidden');
     document.addEventListener('keydown', onPopupPressEcs);
   }
 
-  function onMapClick (evt) {
+  function onMapClick(evt) {
     evt.preventDefault();
     mapOpen();
   }
 
-  function onMapEnterPress (evt) {
+  function onMapEnterPress(evt) {
     if (evt.keyCode === ENTER_KEYCODE) {
       mapOpen();
     }
@@ -76,7 +76,7 @@
 
   buttonWriteUs.addEventListener('click', onButtonWriteUsClick);
 
-  buttonsClosePopup.forEach(function(elem) {
+  buttonsClosePopup.forEach(function (elem) {
     elem.addEventListener('click', onButtonsClosePopupClick);
   });
 
