@@ -55,7 +55,7 @@ gulp.task("clean", function() {
 });
 
 gulp.task("jsmin", function() {
-  return gulp.src("js/**/*.js")
+  return gulp.src(["js/**/*.js", "!js/**/*.min.js"])
     .pipe(uglify())
     .pipe(rename({
       suffix: ".min"
@@ -85,14 +85,15 @@ gulp.task("serve", function() {
 
   gulp.watch("sass/**/*.scss", ["style"]);
   gulp.watch("*.html", ["html"]);
+  gulp.watch("js/**/*.js", ["jsmin"]);
+
   gulp.watch("build/**/*.html").on('change', server.reload);
   gulp.watch("build/css**/*.css").on('change', server.reload);
-  gulp.watch("js/**/*.js", ["jsmin"]);
   gulp.watch("build/js/**/*.js").on('change', server.reload);
 });
 
 gulp.task("sprite", function() {
-  return gulp.src("img/s-*.svg")
+  return gulp.src("img/icon/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
