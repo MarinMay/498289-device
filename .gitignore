@@ -12,3 +12,5 @@ Thumbs.db
 package.json
 package-lock.json
 *.eslintignore
+build/
+sass/

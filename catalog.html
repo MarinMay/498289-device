@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" browser-sync start --server --files '*.*'>
+    <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="preload" href="font/gilroyextrabold.woff2" as="font" crossorigin="anonymos">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
@@ -100,7 +102,7 @@
         <section class="main__filters filters">
           <h2 class="visually-hidden">Фильтры товара</h2>
 
-          <form action="#" class="filters__form">
+          <form action="#" class="filters__form" method="get">
             <fieldset class="filters__item filters__item--price price">
               <h3 class="filters__legend">Стоимость</h3>
 
