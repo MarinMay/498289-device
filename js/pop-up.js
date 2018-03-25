@@ -76,7 +76,7 @@
 
   buttonWriteUs.addEventListener('click', onButtonWriteUsClick);
 
-  buttonsClosePopup.forEach(function (elem) {
+  [].forEach.call(buttonsClosePopup, function (elem) {
     elem.addEventListener('click', onButtonsClosePopupClick);
   });
 

@@ -43,7 +43,17 @@ gulp.task("copy", function() {
   return gulp.src([
     "font/**/*.{woff,woff2}",
     "img/**",
-    "css/normalize.css"
+    "css/normalize.css",
+    "js/**/*.min.js"
+  ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task("copyJS", function() {
+  return gulp.src([
+    "js/**/*.min.js"
   ], {
     base: "."
   })
@@ -86,6 +96,7 @@ gulp.task("serve", function() {
   gulp.watch("sass/**/*.scss", ["style"]);
   gulp.watch("*.html", ["html"]);
   gulp.watch("js/**/*.js", ["jsmin"]);
+  gulp.watch("js/**/*.min.js", ["copyJS"]);
 
   gulp.watch("build/**/*.html").on('change', server.reload);
   gulp.watch("build/css**/*.css").on('change', server.reload);
