@@ -1,0 +1,16 @@
+{
+  "name": "device",
+  "private": true,
+  "devDependencies": {
+    "eslint": "4.16.0",
+    "eslint-config-htmlacademy": "0.4.x"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "test": "eslint js/"
+  },
+  "engines": {
+    "node": "8.9"
+  }
+}
