@@ -1,0 +1,94 @@
+.information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information__item {
+  display: flex;
+  flex-direction: column;
+  min-height: 573px;
+  position: relative;
+  padding-top: 15px;
+}
+
+.information__item--about-us {
+  width: 43%;
+}
+
+.information__item--contacts {
+  width: 48.2%;
+}
+
+.information__item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
+
+}
+
+.information__heading {
+  margin: 46px 0 36px;
+  font-family: "Gilroy-Extra Bold";
+  font-size: 47px;
+}
+
+.information__item--contacts .information__heading {
+  letter-spacing: 0.7px;
+  margin-left: -3px;
+}
+
+.information__text {
+  margin:15px 0;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.12px;
+}
+
+.information__text--compressed {
+  letter-spacing: -0.17px;
+}
+
+.information__item--contacts .information__text {
+  margin-left: -3px;
+}
+
+.information__transport-list {
+  margin-top: 51px;
+  padding-left: 36px;
+  list-style: none;
+  font-family: "Gilroy-Extra Bold";
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.information__transport-item {
+  position: relative;
+}
+
+.information__transport-item::before {
+  position: absolute;
+  content: "";
+  top: 16px;
+  left: -35px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.information__more {
+  align-self: flex-start;
+  width: 260px;
+  margin-top: auto;
+}
+
+.information__map {
+  margin-top: 24px;
+  width: 560px;
+  height: 222px;
+  background-image: url(../img/map.jpg);
+}

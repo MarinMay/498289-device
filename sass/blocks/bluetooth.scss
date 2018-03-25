@@ -1,0 +1,51 @@
+.bluetooth__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bluetooth__label {
+  position: relative;
+  display: inline-block;
+  padding-left: 39px;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.bluetooth__label::before {
+  position: absolute;
+  top: 6px;
+  left: -1px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border: 4px solid #000000;
+  border-radius: 50%;
+}
+
+.bluetooth__label:hover {
+  opacity: 0.6;
+}
+
+.bluetooth__label:active {
+  opacity: 1;
+}
+
+.bluetooth__input:checked + .bluetooth__label::after {
+  position: absolute;
+  top: 14px;
+  left: 7px;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.bluetooth__input:focus + .bluetooth__label{
+  opacity: 0.6;
+}
+
+.bluetooth__input:disabled +.bluetooth__label {
+  opacity: 0.3;
+}

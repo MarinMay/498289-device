@@ -1,6 +1,5 @@
 .DS_Store
 .idea
-*.eslintrc
 *.ai
 *.log
 *.pdf
@@ -9,8 +8,4 @@
 node_modules/
 npm-debug.*
 Thumbs.db
-package.json
-package-lock.json
-*.eslintignore
 build/
-sass/

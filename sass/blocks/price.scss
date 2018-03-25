@@ -1,0 +1,68 @@
+
+.price__range {
+ min-height: 40px;
+ margin-bottom: 3px;
+ padding-top: 17px;
+}
+
+.price__scale {
+  position: relative;
+  width: 97%;
+  margin-left: auto;
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.price__scale-current {
+  position: absolute;
+  width: 58%;
+  height: 2px;
+  background-color: #91c92f;
+}
+
+.price__controls {
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 23px;
+  z-index: 2;
+  transform: translateX(-50%);
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMyI+ICA8cGF0aCBvcGFjaXR5PSIuMyIgZmlsbD0iI0FCQUJBQiIgZD0iTTEwIDIwQzQuNDc3IDIwIDAgMTUuNTIyIDAgMTB2MmMwIDUuNTIyIDQuNDc3IDEwIDEwIDEwIDUuNTIyIDAgMTAtNC40NzggMTAtMTB2LTJjMCA1LjUyMi00LjQ3OCAxMC0xMCAxMHoiLz4gIDxjaXJjbGUgZmlsbD0iI0ZGRiIgY3g9IjEwIiBjeT0iMTAiIHI9IjEwIi8+ICA8Y2lyY2xlIGZpbGw9IiNBQkFCQUIiIGN4PSIxMCIgY3k9IjEwIiByPSIyIi8+PC9zdmc+");
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.price__controls:hover,
+.price__controls:focus {
+  width: 22px;
+  height: 25px;
+}
+
+.price__controls--min {
+  left: 0%;
+}
+
+.price__controls--max {
+  left: 58%;
+}
+
+.price__outputs {
+  display: flex;
+  margin-top: 9px;
+}
+
+.price__output {
+  width: 80px;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000000;
+  opacity: 0.2;
+}
+
+.price__output--min {
+  margin-right: 10px;
+}
