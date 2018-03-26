@@ -1,1 +1,2 @@
-js/jquery.gray.min.js
+js/jquery*.js
+gulpfile.js

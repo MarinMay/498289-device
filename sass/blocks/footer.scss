@@ -19,7 +19,12 @@
   text-align: left;
 }
 
-.footer__item--left::after {
+.footer__address {
+  margin-top: 21px;
+  font-weight: 300;
+}
+
+.footer__address::after {
   position: absolute;
   content: "";
   left: 0;
@@ -27,11 +32,6 @@
   width: 80px;
   background-color: #fec515;
   height: 7px;
-}
-
-.footer__address {
-  margin-top: 21px;
-  font-weight: 300;
 }
 
 .footer__item--right {
