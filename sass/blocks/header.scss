@@ -8,10 +8,8 @@
   margin: 0 auto;
   padding: 16px 60px 51px 59px;
   background-image: linear-gradient(to bottom, #ffffff 40px, #f7e296 40px);
-}
 
-@media all and (max-width: 1199px) {
-  .header__inner {
+  @media (max-width: $large-breackpoint) {
     width: 96.66%;
   }
 }

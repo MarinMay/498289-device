@@ -9,6 +9,10 @@
   justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
+
+  @media (max-width: $large-breackpoint) {
+    width: 96.66%;
+  }
 }
 
 .footer__item {}

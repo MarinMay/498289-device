@@ -2,10 +2,20 @@
   display: flex;
 }
 
-
 .user-menu__autorization {
   width: 57%;
   font-weight: 300;
+
+  @media (max-width: $large-breackpoint) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+  }
+
+  @media (max-width: $small-breackpoint) {
+    flex-shrink: 0;
+    width: 30%;
+  }
 }
 
 .user-menu__link {
@@ -41,6 +51,27 @@
   margin-right: 15px;
   letter-spacing: 0.23px;
   padding-left: 26px;
+
+  @media (max-width: 870px) {
+      flex-shrink: 0;
+      margin-right: 0;
+      padding-left: 0;
+      width: 18px;
+      height: 30px;
+    }
+
+  .user-menu__link-content {
+    @media (max-width: 870px) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  }
 }
 
 .user-menu__link--username::before {
@@ -87,8 +118,14 @@
 }
 
 .user-menu__link--compare {
+  position: relative;
   margin-right: auto;
   padding-left: 22px;
+
+  @media (max-width: $large-breackpoint) {
+    flex-grow: 1;
+    margin-left: 3%;
+  }
 }
 
 .user-menu__link--compare::before {
@@ -98,7 +135,13 @@
 }
 
 .user-menu__link--card {
+  position: relative;
   padding-left: 27px;
+
+  @media (max-width: $large-breackpoint) {
+    flex-grow: 1;
+    margin-left: 3%;
+  }
 }
 
 .user-menu__link--card::before {

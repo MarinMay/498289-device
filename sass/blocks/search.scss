@@ -5,7 +5,7 @@
 }
 
 .search__input {
-  width: 360px;
+  width: 66.54%;
   height: 48px;
   padding: 10px;
   padding-left: 41px;
@@ -78,6 +78,11 @@
   font-weight: 300;
   background-color: transparent;
   border: 2px solid #000000;
+
+  @media (max-width: $small-breackpoint) {
+    padding: 0 10px;
+    line-height: 22px;
+  }
 }
 
 .search__button:not(:focus):not(:active) {
