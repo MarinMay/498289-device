@@ -15,6 +15,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var ghPages = require("gulp-gh-pages");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -119,4 +120,9 @@ gulp.task("images", function() {
       imagemin.jpegtran({progressive: true})
     ]))
     .pipe(gulp.dest("img"));
+});
+
+gulp.task("deploy", function() {
+  return gulp.src("./build/**/*")
+    .pipe(ghPages());
 });
