@@ -1,5 +1,6 @@
 .preview-slider {
   position: relative;
+  min-height: 487px;
 }
 
 .preview-slider__control {
@@ -13,8 +14,15 @@
 }
 
 .preview-slider__item {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
+}
+
+.preview-slider__item--current {
+  opacity: 1;
+  transition: 0.3s opacity linear;
 }
 
 .preview-slider__item::before {
@@ -126,7 +134,9 @@
 #preview-slide1:checked ~ .preview-slider__item--first,
 #preview-slide2:checked ~ .preview-slider__item--second,
 #preview-slide3:checked ~ .preview-slider__item--tird {
-  display: flex;
+  opacity: 1;
+  transition: 0.3s opacity linear;
+  z-index: 2;
 }
 
 #preview-slide1:checked ~ .preview-slider__item--second,
@@ -135,5 +145,7 @@
 #preview-slide2:checked ~ .preview-slider__item--tird,
 #preview-slide3:checked ~ .preview-slider__item--first,
 #preview-slide3:checked ~ .preview-slider__item--second {
-  display: none;
+  opacity: 0;
+  transition: 0.3s opacity linear;
+  z-index: 0;
 }
