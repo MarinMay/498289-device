@@ -25,7 +25,7 @@
 
 body {
   margin: 0;
-  font-family: "Open sans", "Arial", sans-serif;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   background-color: #ffffff;
@@ -99,7 +99,7 @@ html {
   width: 48%; }
 
 .logo {
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 48px;
   line-height: 48px;
   letter-spacing: 0.8px; }
@@ -130,7 +130,7 @@ html {
   padding: 10px;
   padding-left: 41px;
   border: none;
-  font-family: "Open sans";
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 15px;
   line-height: 18px;
   font-weight: 300;
@@ -185,7 +185,7 @@ html {
 .search__button {
   position: relative;
   padding: 0 19px;
-  font-family: "Open sans";
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -342,7 +342,7 @@ html {
 
 .main-menu {
   margin-right: -4px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.6px;
@@ -367,7 +367,7 @@ html {
   display: flex; }
 
 .main-menu__link:hover,
-.main-menu__link:hover {
+.main-menu__link:focus {
   color: rgba(0, 0, 0, 0.6); }
 
 .main-menu__link:active {
@@ -414,7 +414,7 @@ html {
   padding: 24px 60px 30px 59px;
   z-index: 10;
   list-style: none;
-  font-family: "open sans";
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
@@ -440,7 +440,7 @@ html {
   width: 900px; }
 
 .sub-menu__link:hover,
-.sub-menu__link:hover {
+.sub-menu__link:focus {
   color: rgba(0, 0, 0, 0.6); }
 
 .sub-menu__link:active {
@@ -496,7 +496,7 @@ html {
 
 .main__heading {
   margin: 37px 0 25px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.6px; }
@@ -518,7 +518,7 @@ html {
   width: calc(50% - 252px);
   background-color: #dbdbdb;
   margin: 0;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -570,16 +570,11 @@ html {
   display: -ms-flexbox;
   display: flex; }
 
-.preview-slider__item--current {
-  opacity: 1;
-  -webkit-transition: 0.3s opacity linear;
-  transition: 0.3s opacity linear; }
-
 .preview-slider__item::before {
   position: absolute;
   top: -13px;
   right: 49px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 179px;
   line-height: 179px;
   color: #ffffff; }
@@ -622,7 +617,7 @@ html {
 .preview-slider__header {
   position: relative;
   margin-bottom: 20px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.7px; }
@@ -638,7 +633,7 @@ html {
 
 .preview-slider__text {
   margin-bottom: 42px;
-  font-family: "Open sans";
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   letter-spacing: 0.15px; }
 
@@ -654,7 +649,7 @@ html {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-top: 50px;
-  font-family: "Open sans";
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 13px;
   line-height: 20px;
   font-weight: 300; }
@@ -667,7 +662,7 @@ html {
 
 .preview-slider__cell--fact {
   margin-bottom: 7px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 36px;
   line-height: 48px;
   font-weight: 300; }
@@ -728,7 +723,7 @@ html {
   padding: 9px;
   vertical-align: middle;
   text-align: center;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
@@ -762,7 +757,7 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.1px; }
@@ -928,7 +923,7 @@ html {
 .service-slider__header {
   margin: 0 0 40px;
   padding-left: 2px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 47px;
   letter-spacing: 1px; }
 
@@ -950,6 +945,7 @@ html {
   height: 100px;
   line-height: 0; }
 
+/* stylelint-disable */
 .grayscale {
   /* Firefox 10-34 */
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='saturate' values='0'/></filter></svg>#grayscale");
@@ -967,16 +963,16 @@ html {
           filter: gray; }
 
 .grayscale.grayscale-fade {
-  -webkit-transition: -webkit-filter .5s;
-  transition: -webkit-filter .5s;
-  transition: filter .5s;
-  transition: filter .5s, -webkit-filter .5s; }
+  -webkit-transition: -webkit-filter 0.5s;
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s; }
 
 /* Webkit hack until filter is unprefixed */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .grayscale.grayscale-fade {
-    -webkit-transition: -webkit-filter .5s;
-    transition: -webkit-filter .5s; } }
+    -webkit-transition: -webkit-filter 0.5s;
+    transition: -webkit-filter 0.5s; } }
 
 .grayscale.grayscale-off,
 .grayscale.grayscale-fade:hover {
@@ -989,8 +985,8 @@ html {
   filter: none; }
 
 .grayscale.grayscale-replaced > svg {
-  -webkit-transition: opacity .5s ease;
-  transition: opacity .5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
   opacity: 1; }
 
 .grayscale.grayscale-replaced.grayscale-off > svg,
@@ -1034,7 +1030,7 @@ html {
 
 .information__heading {
   margin: 46px 0 36px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 47px; }
 
 .information__item--contacts .information__heading {
@@ -1057,7 +1053,7 @@ html {
   margin-top: 51px;
   padding-left: 36px;
   list-style: none;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 40px; }
 
@@ -1084,7 +1080,7 @@ html {
   margin-top: 24px;
   width: 560px;
   height: 222px;
-  background-image: url(../img/map.jpg); }
+  background-image: url("../img/map.jpg"); }
 
 .footer {
   padding: 60px 0 47px;
@@ -1183,7 +1179,7 @@ html {
   margin: 0;
   padding: 6px 0 0;
   list-style: none;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.6px;
@@ -1223,13 +1219,13 @@ html {
   opacity: 0.3; }
 
 .social__link--facebook {
-  background-image: url(../img/icon/fb.svg); }
+  background-image: url("../img/icon/fb.svg"); }
 
 .social__link--insta {
-  background-image: url(../img/icon/instagram.svg); }
+  background-image: url("../img/icon/instagram.svg"); }
 
 .social__link--twitter {
-  background-image: url(../img/icon/twitter.svg); }
+  background-image: url("../img/icon/twitter.svg"); }
 
 .social__link:hover,
 .social__link:focus {
@@ -1262,7 +1258,7 @@ html {
 
 .pop-up--map {
   height: 560px;
-  background-image: url(../img/map-big.jpg);
+  background-image: url("../img/map-big.jpg");
   background-position: center center; }
 
 .pop-up__close {
@@ -1299,7 +1295,7 @@ html {
 
 .pop-up__item {
   width: 360px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px; }
 
@@ -1307,7 +1303,7 @@ html {
   width: 360px;
   height: 50px;
   padding: 5px 20px 6px;
-  font-family: "Open sans";
+  font-family: "Gilroy", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1333,7 +1329,7 @@ html {
   width: 760px;
   height: 154px;
   padding: 20px 25px;
-  font-family: "Open sans";
+  font-family: "Gilroy", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1418,7 +1414,7 @@ html {
 .filters__legend {
   margin-top: 10px;
   margin-bottom: 18px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px; }
 
@@ -1476,7 +1472,7 @@ html {
   width: 80px;
   overflow-x: auto;
   white-space: nowrap;
-  font-family: Gilroy;
+  font-family: "Gilroy", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -1588,7 +1584,7 @@ html {
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -1680,7 +1676,7 @@ html {
   width: 61px;
   height: 61px;
   padding-left: 5px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   line-height: 59px;
   text-align: center;
@@ -1751,7 +1747,7 @@ html {
   width: 72%;
   margin: 0;
   margin-right: auto;
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.27px; }
@@ -1770,7 +1766,7 @@ html {
   width: 25%;
   padding-right: 2px;
   text-align: right;
-  font-family: Gilroy;
+  font-family: "Gilroy", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px; }
@@ -1788,7 +1784,7 @@ html {
   background-color: #ebebeb; }
 
 .pagination__item {
-  font-family: "Gilroy-Extra Bold";
+  font-family: "Gilroy-Extra Bold", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px; }
 
