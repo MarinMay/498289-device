@@ -44,10 +44,10 @@
   background-color: #000000;
 }
 
-.bluetooth__input:focus + .bluetooth__label{
+.bluetooth__input:focus + .bluetooth__label {
   opacity: 0.6;
 }
 
-.bluetooth__input:disabled +.bluetooth__label {
+.bluetooth__input:disabled + .bluetooth__label {
   opacity: 0.3;
 }

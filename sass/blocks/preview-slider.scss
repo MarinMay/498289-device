@@ -20,31 +20,26 @@
   display: flex;
 }
 
-.preview-slider__item--current {
-  opacity: 1;
-  transition: 0.3s opacity linear;
-}
-
 .preview-slider__item::before {
   position: absolute;
   top: -13px;
   right: 49px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: $font-main-bold;
   font-size: 179px;
   line-height: 179px;
   color: #ffffff;
 }
 
 .preview-slider__item--first::before {
-  content:"01";
+  content: "01";
 }
 
 .preview-slider__item--second::before {
-  content:"02";
+  content: "02";
 }
 
 .preview-slider__item--tird::before {
-  content:"03";
+  content: "03";
 }
 
 .preview-slider__image {
@@ -71,7 +66,7 @@
 .preview-slider__header {
   position: relative;
   margin-bottom: 20px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: $font-main-bold;
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.7px;
@@ -89,7 +84,7 @@
 
 .preview-slider__text {
   margin-bottom: 42px;
-  font-family: "Open sans";
+  font-family: $font-additional;
   font-weight: 300;
   letter-spacing: 0.15px;
 }
@@ -103,7 +98,7 @@
   display: flex;
   justify-content: flex-start;
   margin-top: 50px;
-  font-family: "Open sans";
+  font-family: $font-additional;
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
@@ -119,7 +114,7 @@
 
 .preview-slider__cell--fact {
   margin-bottom: 7px;
-  font-family: "Gilroy";
+  font-family: $font-main;
   font-size: 36px;
   line-height: 48px;
   font-weight: 300;

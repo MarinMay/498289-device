@@ -17,7 +17,7 @@
   width: 61px;
   height: 61px;
   padding-left: 5px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: $font-main-bold;
   font-size: 14px;
   line-height: 59px;
   text-align: center;
@@ -47,7 +47,7 @@
 }
 
 .product-card__add-to-cart {
-  width: 55.55%
+  width: 55.55%;
 }
 
 .product-card__add-to-compared {
@@ -82,7 +82,7 @@
   width: 72%;
   margin: 0;
   margin-right: auto;
-  font-family: "Gilroy-Extra Bold";
+  font-family: $font-main-bold;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.27px;
@@ -96,14 +96,16 @@
 .product-card__name:active {
   opacity: 0.3;
 }
+
 .product-card__no-wrap {
   white-space: nowrap;
 }
+
 .product-card__price {
   width: 25%;
   padding-right: 2px;
   text-align: right;
-  font-family: Gilroy;
+  font-family: $font-main;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;

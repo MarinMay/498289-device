@@ -21,7 +21,7 @@
 
 .pop-up--map {
   height: 560px;
-  background-image: url(../img/map-big.jpg);
+  background-image: url("../img/map-big.jpg");
   background-position: center center;
 }
 
@@ -58,7 +58,7 @@
 
 .pop-up__item {
   width: 360px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: $font-main-bold;
   font-size: 18px;
   line-height: 24px;
 }
@@ -67,7 +67,7 @@
   width: 360px;
   height: 50px;
   padding: 5px 20px 6px;
-  font-family: "Open sans";
+  font-family: $font-main;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -90,9 +90,6 @@
   margin-bottom: 10px;
 }
 
-.pop-up__item--name {}
-.pop-up__item--email {}
-
 .pop-up__item--message {
   width: 760px;
   margin: 30px 0 36px;
@@ -102,7 +99,7 @@
   width: 760px;
   height: 154px;
   padding: 20px 25px;
-  font-family: "Open sans";
+  font-family: $font-main;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -124,6 +121,3 @@
 .pop-up__input--error {
   background-color: #f6dada;
 }
-
-.pop-up__submit {}
-

@@ -27,12 +27,11 @@
   width: 80px;
   height: 7px;
   background-color: #000000;
-
 }
 
 .information__heading {
   margin: 46px 0 36px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: $font-main-bold;
   font-size: 47px;
 }
 
@@ -42,7 +41,7 @@
 }
 
 .information__text {
-  margin:15px 0;
+  margin: 15px 0;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.12px;
@@ -60,7 +59,7 @@
   margin-top: 51px;
   padding-left: 36px;
   list-style: none;
-  font-family: "Gilroy-Extra Bold";
+  font-family: $font-main-bold;
   font-size: 16px;
   line-height: 40px;
 }
@@ -90,5 +89,5 @@
   margin-top: 24px;
   width: 560px;
   height: 222px;
-  background-image: url(../img/map.jpg);
+  background-image: url("../img/map.jpg");
 }

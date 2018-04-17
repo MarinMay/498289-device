@@ -7,7 +7,7 @@
   "dependencies": {},
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" —syntax scss",
+    "stylelint": "stylelint \"sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "npm run build && gulp serve"
@@ -32,8 +32,8 @@
     "gulp-uglify": "^3.0.0",
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1",
-    "stylelint": "8.1.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint": "^9.2.x",
+    "stylelint-config-htmlacademy": "^0.1.1"
   },
   "browserslist": [
     "last 2 versions",

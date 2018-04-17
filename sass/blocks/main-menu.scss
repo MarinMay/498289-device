@@ -1,6 +1,6 @@
 .main-menu {
   margin-right: -4px;
-  font-family: "Gilroy-Extra Bold";
+  font-family: $font-main-bold;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.6px;
@@ -14,9 +14,6 @@
   list-style: none;
 }
 
-.main-menu__item {}
-
-
 .main-menu__item--catalog {
   position: relative;
   margin-right: calc(51.8% - 247px);
@@ -28,7 +25,7 @@
 }
 
 .main-menu__link:hover,
-.main-menu__link:hover {
+.main-menu__link:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 

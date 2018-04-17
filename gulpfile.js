@@ -80,6 +80,7 @@ gulp.task("build", function(done) {
     "copy",
     "style",
     "jsmin",
+    "copyJS",
     "html",
     done
   );

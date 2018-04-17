@@ -10,7 +10,7 @@
   padding: 10px;
   padding-left: 41px;
   border: none;
-  font-family: "Open sans";
+  font-family: $font-additional;
   font-size: 15px;
   line-height: 18px;
   font-weight: 300;
@@ -72,7 +72,7 @@
 .search__button {
   position: relative;
   padding: 0 19px;
-  font-family: "Open sans";
+  font-family: $font-additional;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;

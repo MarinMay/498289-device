@@ -8,7 +8,7 @@
 }
 
 .pagination__item {
-  font-family: "Gilroy-Extra Bold";
+  font-family: $font-main-bold;
   font-size: 16px;
   line-height: 24px;
 }
@@ -18,17 +18,17 @@
   letter-spacing: 3.5px;
 }
 
-.pagination__item--word  .pagination__link {
+.pagination__item--word .pagination__link {
   display: block;
   padding: 24px 26px 22px 30px;
 }
 
-.pagination__item--word  .pagination__link:hover ,
-.pagination__item--word  .pagination__link:focus{
+.pagination__item--word .pagination__link:hover,
+.pagination__item--word .pagination__link:focus {
   background-color: #d9d9d9;
 }
 
-.pagination__item--word  .pagination__link:active {
+.pagination__item--word .pagination__link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 

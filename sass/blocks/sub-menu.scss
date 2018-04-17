@@ -6,7 +6,7 @@
   padding: 24px 60px 30px 59px;
   z-index: 10;
   list-style: none;
-  font-family: "open sans";
+  font-family: $font-additional;
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
@@ -22,8 +22,7 @@
 }
 
 .sub-menu__item:nth-child(2),
-.sub-menu__item:nth-child(3n+8)
- {
+.sub-menu__item:nth-child(3n+8) {
   width: 200px;
 }
 
@@ -38,7 +37,7 @@
 }
 
 .sub-menu__link:hover,
-.sub-menu__link:hover {
+.sub-menu__link:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
