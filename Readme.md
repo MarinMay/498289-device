@@ -1,5 +1,5 @@
 # Личный проект «Девайс»
 
-Собранный вариант https://marinmay.github.io/Device/
+Собранный вариант https://marina-vaganova.github.io/Device/
 ---
 
